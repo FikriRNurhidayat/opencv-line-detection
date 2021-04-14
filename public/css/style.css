@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  min-width: 50%;
+  text-align: center;
+  display: none;
+}
+
+.output {
+  display: none;
+  text-align: center;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.output #image {
+  max-height: 512px;
+  max-width: 512px;
+}
+
+.output #canvas {
+  max-height: 512px;
+  max-width: 512px;
+}
+
+.parameter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 10%;
+}
+
+.parameter > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.threshold #threshold {
+  width: 100%;
+}
+
+.ratio #ratio {
+  width: 100%;
+}

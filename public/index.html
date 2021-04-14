@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open CV Test!</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="main">
+      <div id="container" class="container">
+        <input type="file" id="input" name="file"/>
+        <div id="output" class="output">
+          <img id="image" alt="No Image">
+          <div class="parameter">
+            <div>
+              <h5>Threshold</h5>
+              <input type="number" id="threshold" />
+            </div>
+
+            <div>
+              <h5>Ratio</h5>
+              <input type="number" id="ratio" />
+            </div>
+
+            <div>
+              <button id="btn-back" class="btn btn-danger">Back</button>
+            </div>
+          </div>
+
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+    <script async src="/js/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+    <script src="/js/threshold.js" type="text/javascript"></script>
+    <script src="/js/utility.js" type="text/javascript"></script>
+    <script src="/js/image.js" type="text/javascript"></script>
+  </body>
+</html>
