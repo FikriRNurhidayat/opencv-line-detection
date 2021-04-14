@@ -7,6 +7,9 @@
     "start": "bin/server",
     "dev": "nodemon bin/server"
   },
+  "engines": {
+    "node": "14.15"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
